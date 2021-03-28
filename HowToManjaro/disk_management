@@ -1,0 +1,11 @@
+# List of connected drives
+ lsblk
+# See disk IDs
+# See disk id
+ blkid
+# Partision information
+ lsblk
+# Disk ID configuration file
+ ls /etc/fstab
+# See free space
+ free -h

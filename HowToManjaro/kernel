@@ -1,0 +1,2 @@
+#install kernel (rmc if you want to replace the kernel
+ sudo mhwd-kernel -i linux414 rmc

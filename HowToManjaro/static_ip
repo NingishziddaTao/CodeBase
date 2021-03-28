@@ -1,0 +1,4 @@
+# Backup
+ sudo cp /etc/network/interfaces /etc/network/interfaces.old
+# Edit file
+ sudo vim /etc/network/interfaces
