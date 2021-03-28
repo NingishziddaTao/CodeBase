@@ -1,0 +1,3 @@
+S'/mnt/sda5/CBR_B/CBR.iso'
+p0
+.
