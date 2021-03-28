@@ -1,0 +1,14 @@
+
+cd /etc/security/limits.conf
+@audio          -       rtprio          95
+@audio          -       memlock         unlimited
+
+groups user
+sudo groupadd audio
+usermod -a -G audio $USER # $USER=currentuser 
+
+sudo vim /etc/lvm/lvm.conf
+   use_mlockall = 1 (boolean)
+
+# Midi
+sudo modprobe snd_seq

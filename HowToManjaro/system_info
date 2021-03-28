@@ -1,0 +1,19 @@
+# Check processes
+ htop
+# Check memory
+ free -h
+# Check partitions id
+ blkid
+# Check partitions
+ lsblk
+# Check partitions
+ sudo fdisk -l
+# Disk usage
+ du -amd1
+# See hardware
+ inxi -Fx
+# hardware and drivers
+ dmesg |grep -i
+# hardware and drivers
+ inxi -Fx
+

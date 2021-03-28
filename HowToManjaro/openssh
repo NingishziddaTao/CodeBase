@@ -1,0 +1,26 @@
+# Start openssh
+ sudo systemctl start sshd
+# Stop openssh
+ sudo systemctl stop sshd
+# Check openssh status
+ sudo systemctl status sshd
+# Check if you can ssh into your local machine if not proceed folowing steps
+ ssh localhost
+#! if you changed the default ssh port:
+ ssh -p portnumber host
+# Install openssh
+ sudo pacman -Sy openssh
+# Enable openssh on boot
+ sudo systemctl enable sshd
+# Disable openssh on boot
+ sudo systemctl disable sshd
+# Configure openssh
+ vim /etc/ssh/sshd_config/ 
+# Restart openssh
+ sudo systemctl restart sshd
+# Check ip
+ifconfig
+# Check network
+nmap ip/subnetmask
+# Login to computer
+ssh user@ip:/directory

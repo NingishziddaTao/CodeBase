@@ -1,0 +1,7 @@
+# Change settings
+sudo vim /etc/default/grub
+# Update grub
+sudo update-grub
+# efi grug
+ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro --recheck
+

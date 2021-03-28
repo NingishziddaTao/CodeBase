@@ -1,0 +1,10 @@
+
+#install downgrade
+pamac install downgrade
+
+#pacman package path
+/var/cache/pacman/pkg
+#manualy downgrading
+sudo pacman -U packagename
+#pacman conf path
+/etc/pacman.conf

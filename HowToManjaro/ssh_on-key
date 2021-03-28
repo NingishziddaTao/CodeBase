@@ -1,0 +1,6 @@
+#create key on both the host and the client
+ssh-keygen
+#go to the shh map
+cd ~/.ssh
+#copy the client key to the host
+ssh-copy-id -i key_name user@host_ip
