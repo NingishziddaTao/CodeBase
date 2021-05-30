@@ -1,4 +1,0 @@
-# See key input
-xev
-# # Set keys
-xmodmap -e

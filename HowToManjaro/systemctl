@@ -1,4 +1,0 @@
-# Get a list of services
- systemctl list-unit-files
-# Restart service
- systemctl restart systemd-timesyncd.service
