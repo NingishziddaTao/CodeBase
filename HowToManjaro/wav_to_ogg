@@ -1,4 +1,0 @@
-#200~For OGG, the most traditional encoder is VorbisInstall Vorbisudo 
-apt-get install vorbis-tool
-#And to encode
-oggenc -q 3 -o target source

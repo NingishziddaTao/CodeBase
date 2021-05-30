@@ -1,4 +1,0 @@
-#open the crontab file
-sudo crontab -e
-#line for commands on boot
-@reboot command
