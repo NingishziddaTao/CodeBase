@@ -18,6 +18,7 @@ def fu(original, new_name):
     #print(type(glob("*")))
     os.system("cp -r {} {}".format(original, new_name))
     sleep(0.4)
+    #os.wait()
     
     for i in glob(new_name+"/*"):
     #for i in glob(original+"/*"):
@@ -33,19 +34,25 @@ def fu(original, new_name):
 
 #                os.system("sed -i 's/{0}/{1}/' {2}".format(original[:-1], new_name, new_name+"/"+new_name+".tscn"))
 #                os.system("sed -i 's/{0}/{1}/' {2}".format(original[:-1]+".gd",
+
             print(changed_name)
 #                          new_name+".gd", new_name+"/"+new_name+".tscn"))
     return original, new_name
 
-    #os.system("sed -i 's/{0}/{1}/g' {2}".format(original+".gd",
-            #new_name+".gd", new_name+"/"+new_name+".tscn"))
+#    os.system("sed -i 's/{0}/{1}/g' {2}".format(original+".gd",
+#            new_name+".gd", new_name+"/"+new_name+".tscn"))
 
 #    else:
 #        print("invalid filename")
 #        return
 
 original, new_name = fu(args.original, args.new_name)
+#sleep(0.4)
+i = input("Press Enter")
 
 # For some reason escape character needs to be escaped "\\b to set boundery"
+#os.system("sed -i 's/{0}/{1}/g' {2}".format(original, new_name, new_name+"/"+new_name+".tscn"))
+#os.system("sed -i 's/\b{0}/{1}/g' {2}".format(original, new_name, new_name+"/"+new_name+".tscn"))
 os.system("sed -i 's/\\b{0}/{1}/g' {2}".format(original, new_name, new_name+"/"+new_name+".tscn"))
+os.system("sed -i 's/\\b{0}/{1}/g' {2}".format(original, new_name, new_name+"/"+new_name+".tres"))
 
